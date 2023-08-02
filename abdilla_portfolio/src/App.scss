@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+$text-color : #17203F;
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerSection {
+  background: url(img/headerBg.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;
+  width: 100%;
+  height: 120vh;
+}
+
+.navbarActive{
+  transition: 0.5s ease-in;
+  backdrop-filter: saturate(180%) blur(3px) !important;
+  background: hsla(0,0%,100%,.8) !important;
+  padding: 5px 0px !important;
+}
+
+.Navbar{
+  padding: 24px 0;
+  .navBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav-logo{
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 32px;
+          font-weight: 700;
+        }
+    }
+
+    .nav-list{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      list-style-type: none;
+      padding: none !important;
+      margin-top: 12px;
+
+      .NavBtnList {
+        display: flex;
+        width: auto;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 80px;
+        background: #F16F4F;
+        gap: 8px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        display: none;
+      }
+
+      
+      
+      .nav-link{
+        color: #A9A9AA;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .navActive {
+        color: #FE390C;
+      }
+    }
+
+    .NavBtn {
+      display: inline-flex;
+      padding: 12px 16px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid #FE390C;
+      color: #FE390C;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #fe380ca9;
+      }
+    }
+
+    .nav__toggler{
+      cursor: pointer;
+      display: none;
+      div{
+        border-radius: 5px;
+        width: 36px;
+        height: 0.2rem;
+        margin: 0.4rem;
+        background: #F07454;
+        transition: 0.5s ease-in;
+      }
+    }
+  }
+}
+

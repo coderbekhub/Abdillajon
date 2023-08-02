@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    // NAV BAR
+    .Navbar{
+      .navBody{
+        .nav-logo{
+          img{
+            height: 50px;
+          }
+        }
+        .nav__toggler{
+          display: block;
+          z-index: 9;
+        }
+  
+        .toggle{
+          .line1{
+            transform: rotate(-45deg) translate(-9px, 5px);
+          }
+          .line2{
+            opacity: 0;
+          }
+          .line3{
+            transform: rotate(45deg) translate(-8px, -5px);
+          }
+        }
+  
+        .nav-list{
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100vh;
+          background: #fff;
+          flex-direction: column;
+          justify-content: center;
+          transform: translateX(100%);
+          margin-top: 0;
+          transition: 0.3s ease-in;
+          
+          .NavBtnList {
+            display: inline-block;
+          }
+  
+          
+        }
+  
+        .nav__active{
+          transform: translateX(0);
+        }
+      }
+    }
+    .NavBtn {
+      display: none !important;
+    }
+  
+}
