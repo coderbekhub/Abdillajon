@@ -1,5 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import NavBrand from '../img/NavBrand.svg'
+import NavInsta from '../img/navInsta.svg'
+import NavFcBook from '../img/NavFsBook.svg'
+import NavLN from '../img/NavLN.svg'
+import NavSite from '../img/NavSite.svg'
+
 
 export default function Header() {
   const [active, setActive] = useState('nav-list')
@@ -32,6 +37,7 @@ export default function Header() {
   return (
     <section className='headerSection'>
       <div className="container">
+        {/* NAVBAR START */}
         <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
             <div className="navBody">
               <a href='/'>
@@ -67,7 +73,43 @@ export default function Header() {
             </div>
         </nav>
 
-        {/* hero */}
+        {/* HERO START */}
+
+        <div className='heroContent d-flex'>
+          <div className='heroInfo'>
+            <h2>Hello, I’m</h2>
+            <h3>robert fox</h3>
+            <span>Professional Product Designer</span>
+            <a href="#">let’s talk</a> 
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img src={NavInsta} alt="..." />
+                </div>
+              </a></li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src={NavFcBook} alt="..." />
+                </div>
+              </a></li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src={NavLN} alt="..." />
+                </div>
+              </a></li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src={NavSite} alt="..." />
+                </div>
+              </a></li>
+          </ul>
+        </div>
       </div>
     </section>
   )
