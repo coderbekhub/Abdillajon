@@ -9,6 +9,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.App {
+  overflow-x: hidden;
+}
+
 $text-color : #17203F;
 
 .container {
@@ -471,5 +475,86 @@ a {
     p {
       color: #FFD7CE;
     }
+  }
+}
+
+// PORTFOLIO
+
+.portfolioSection {
+  background: #F7F7F7;
+  padding: 72px 0 116px 0;
+
+  .slick-next:before, .slick-prev:before {
+    color: red;
+    position: relative;
+    font-size: 40px;
+    display: none;
+  }
+
+  .slick-prev:before {
+    font-size: 40px;
+    right: 35px;
+  }
+
+  .portfolioContent {
+    h2 {
+      color: #FE390C;
+      font-family: Anton;
+      font-size: 80px;
+      font-weight: 400;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      margin-bottom: 63px;
+      display: flex;
+      align-items: center;
+      span {
+        color: #111214;
+        font-family: Anton;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        margin-left: 24px;
+      }
+    }
+
+    .portfolioInfo {
+      text-align: center;
+      cursor: pointer;
+      img {
+        width: 344px;
+        height: auto;
+        flex-shrink: 0;
+      }
+
+
+      div {
+        position: relative;
+        top: -150px;
+        display: none;
+        h3 {
+          color: #FFF;
+          font-family: Anton;
+          font-size: 32px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+  
+        p {
+          color: #FFF;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: -0.64px;
+        }
+      }
+    }
+
+    .portfolioInfo:hover {
+      .portfolioText {
+        display: inline-block;
+      }
+    }
+
   }
 }
