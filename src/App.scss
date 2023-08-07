@@ -485,10 +485,22 @@ a {
   padding: 72px 0 116px 0;
 
   .slick-next:before, .slick-prev:before {
-    color: red;
-    position: relative;
-    font-size: 40px;
     display: none;
+  }
+
+  .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    content: '•';
+    text-align: center;
+    border-radius: 1px;
+    background: #FE390C;
+    color: #FE390C;
   }
 
   .slick-prev:before {
@@ -556,5 +568,104 @@ a {
       }
     }
 
+  }
+}
+
+// TESTIMONIAL
+
+.testimonialSection {
+  padding: 120px 0;
+
+  .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    content: '•';
+    text-align: center;
+    border-radius: 1px;
+    background: #FE390C;
+    color: #FE390C;
+  }
+  
+  .testimonialContent {
+    cursor: pointer;
+
+    img {
+      width: 364px;
+      height: 422px;
+    }
+
+    .testimonialInfo {
+      h2 {
+        display: flex;
+        align-items: center;
+        color: #FE390C;
+        font-family: Anton;
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        span {
+          color: #111214;
+          font-family: Anton;
+          font-size: 40px;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          margin-left: 24px;
+        }
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        color: #111214;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 32px; 
+        letter-spacing: -0.28px;
+        margin-bottom: 32px;
+        width: 430px;
+      }
+
+      h3 {
+        color: #FE390C;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px; 
+        letter-spacing: -0.64px;
+      }
+
+      span {
+        color: #A9A9AA;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px; 
+        letter-spacing: -0.56px;
+      }
+    }
+
+    .testimonialPages {
+      margin-right: 10px;
+      h4 {
+        color: #FE390C;
+        font-family: Anton;
+        font-size: 24px;
+        font-weight: 400;
+        display: flex;
+        h4 {
+          color: #C4C4C4;
+        }
+      }
+    }
   }
 }
