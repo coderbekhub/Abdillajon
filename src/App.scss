@@ -387,3 +387,89 @@ a {
     justify-content: space-between;
   }
 }
+
+// SERVICE
+
+.serviceSection {
+  background: #fff;
+  padding-bottom: 80px;
+
+  .serviceTitle {
+    color: #FE390C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Anton;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+    span {
+      color: #111214;
+      font-family: Anton;
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-left: 24px;
+    }
+  }
+
+  .serviceContent {
+    gap: 60px;
+
+    .serviceCard {
+      width: 230px;
+      height: 260px;
+      flex-shrink: 0;
+      background: #F7F7F7;
+      padding: 40px 31px 31px 20px;
+      transition: ease-in .3s;
+      cursor: pointer;
+
+      i {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 24px;
+        font-size: 32px;
+        color: #FE390C;
+      }
+
+      h2 {
+        color: #111214;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px; 
+        letter-spacing: -0.64px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #A9A9AA;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: -0.28px;
+      }
+    }
+  }
+
+  .serviceCard:hover {
+    &:hover {
+      background: #FE390C;
+    }
+
+    i {
+      color: #fff;
+    }
+
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: #FFD7CE;
+    }
+  }
+}
