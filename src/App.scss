@@ -195,7 +195,7 @@ a {
 
           img {
             transform: scale(1);
-            transition: ease-in-out .5s;
+            transition: ease-in-out .3s;
   
             &:hover {
               transform: scale(1.2);
@@ -533,6 +533,7 @@ a {
     .portfolioInfo {
       text-align: center;
       cursor: pointer;
+   
       img {
         width: 344px;
         height: auto;
@@ -593,7 +594,7 @@ a {
   
   .testimonialContent {
     cursor: pointer;
-
+    
     img {
       width: 364px;
       height: 422px;
@@ -665,6 +666,159 @@ a {
         h4 {
           color: #C4C4C4;
         }
+      }
+    }
+  }
+}
+
+// CONTACT
+
+.contactSection {
+  background: #111214;
+  padding: 55px 0 51px 0;  
+
+  .contactContent {
+    display: flex;
+    align-items: center;
+    .contactInfo {
+      h2 {
+        color: #FE390C;
+        font-family: Anton;
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        span {
+          color: #FFF;
+          font-family: Anton;
+          font-size: 40px;
+          font-weight: 400;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          margin-left: 24px;
+          width: 350px;
+        }
+      }
+
+      div {
+          h3 {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.32px;
+            margin-bottom: 9px;
+          }
+  
+          a {
+            color: #A9A9AA;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.28px;
+          }
+          margin-bottom: 43px;
+
+          span {
+            color: #A9A9AA;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.28px;
+          }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 0;
+        a {
+          div {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            background: #ffffff1a;
+            border-radius: 50%;
+            padding: 9px 10px 10px 10px;
+  
+            img {
+              transform: scale(1);
+              transition: ease-in-out .3s;
+    
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      h2 {
+        color: #FFF;
+        font-family: Anton;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 64px;
+        span {
+          font-family: Anton;
+          color: #FE390C;
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        label {
+          color: #FFF;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.28px;
+          margin-bottom: 12px;
+        }
+
+        input {
+          width: 312px;
+          height: 54px;
+          flex-shrink: 0;
+          border-radius: 2px;
+          background: rgba(202, 205, 209, 0.10);
+          padding: 20px 125px 20px 16px;
+          color: rgba(169, 169, 170, 0.60);
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: -0.24px;
+          border: none;
+          margin-right: 30px;
+        }
+      }
+
+      div {
+        textarea {
+          width: 654px;
+          height: 124px;
+          flex-shrink: 0;
+          border: none;
+          border-radius: 2px;
+          background: rgba(202, 205, 209, 0.10);
+          padding: 16px 0 0 16px;  
+        }
+      }
+      
+      button {
+        width: 148px;
+        height: 47px;
+        padding: 16px 24px;
+        gap: 10px;
+        border-radius: 4px;
+        background: #FE390C;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
       }
     }
   }

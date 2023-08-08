@@ -6,6 +6,7 @@ import Project from './Project'
 import Service from './Service'
 import Portfolio from './Portfolio'
 import Testimonial from './Testimonial'
+import Contact from './Contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <Service />
     <Portfolio />
     <Testimonial />
+    <Contact />
     </>
   )
 }
