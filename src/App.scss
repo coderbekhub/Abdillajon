@@ -28,14 +28,12 @@ a {
   text-decoration: none;
 }
 
-
-
-.navbarActive{
-  transition: 0.5s ease-in;
-  backdrop-filter: saturate(180%) blur(3px) !important;
-  background: hsla(0,0%,100%,.8) !important;
-  padding: 5px 0px !important;
-}
+// .navbarActive{
+//   transition: 0.5s ease-in;
+//   backdrop-filter: saturate(180%) blur(3px) !important;
+//   background: hwb(0 100% 0% / 0.8) !important;
+//   padding: 5px 0px !important;
+// }
 
 .Navbar{
   padding: 24px 0;
@@ -78,8 +76,6 @@ a {
         line-height: 150%;
         display: none;
       }
-
-      
       
       .nav-link{
         color: #A9A9AA;
