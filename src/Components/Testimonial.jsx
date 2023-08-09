@@ -16,7 +16,7 @@ export default class Testimonial extends Component {
     return (
       <section className="testimonialSection">
         <div className="container">
-          <div>
+          <div className="">
             <Slider {...settings}>
               <div className="testimonialContent d-flex justify-content-between">
                 <div className="">

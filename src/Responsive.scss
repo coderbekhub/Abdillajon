@@ -371,6 +371,228 @@
     }
   }
 
+  // PROJECT
+  .projectCard {
+    z-index: 100;
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #111214;
+    padding: 73px 0 79px 0;
+    margin-bottom: 0px;
+    
+    h2 {
+      color: #FFF;
+      font-family: Anton;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      text-transform: capitalize;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+  
+    a {
+      width: 138px;
+      height: 47px; 
+      display: inline-flex;
+      padding: 16px 24px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 4px;
+      background: #FE390C;
+      color: #FFF;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: capitalize;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 19px;
+    }
+  
+    button {
+      background: none;
+      border: none;
+      color: #A9A9AA;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px; 
+      letter-spacing: -0.56px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+  
+      &::before {
+        content: '';
+        display: inline-block;
+        background: url(img/Icon.svg); background-repeat: no-repeat; background-size: cover;background-position: center;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // SERVICE
+
+  .serviceSection {
+    padding-bottom: 40px;
+
+    .serviceTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Anton;
+      font-size: 64px;
+      font-weight: 400;
+      letter-spacing: 1.28px;
+      text-transform: uppercase;
+      margin-bottom: 57px;
+      span {
+        color: #111214;
+        font-family: Anton;
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 0.64px;
+        text-transform: uppercase;
+        margin-left: 8px;
+      }
+    }
+
+    .serviceContent {
+      gap: 60px;
+
+      .serviceCard {
+        width: 230px;
+        height: 260px;
+        flex-shrink: 0;
+        background: #F7F7F7;
+        padding: 40px 31px 31px 20px;
+        transition: ease-in .3s;
+        cursor: pointer;
+
+        i {
+          width: 32px;
+          height: 32px;
+          margin-bottom: 24px;
+          font-size: 32px;
+          color: #FE390C;
+        }
+
+        h2 {
+          color: #111214;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 30px; 
+          letter-spacing: -0.64px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: #A9A9AA;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px; 
+          letter-spacing: -0.28px;
+        }
+      }
+    }
+
+    .serviceCard:hover {
+      &:hover {
+        background: #FE390C;
+      }
+
+      i {
+        color: #fff;
+      }
+
+      h2 {
+        color: #fff;
+      }
+
+      p {
+        color: #FFD7CE;
+      }
+    }
+  }
+
+  // PORTFOLIO
+
+  .portfolioSection {
+    padding: 72px 0 116px 0;
+
+    .portfolioContent {
+      h2 {
+        color: #FE390C;
+        font-family: Anton;
+        font-size: 64px;
+        font-weight: 400;
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+        margin-bottom: 63px;
+        display: flex;
+        align-items: center;
+        span {
+          color: #111214;
+          font-family: Anton;
+          font-size: 32px;
+          font-weight: 400;
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          margin-left: 8px;
+        }
+      }
+
+      .portfolioInfo {
+        text-align: center;
+        cursor: pointer;
+    
+        img {
+          width: 344px;
+          height: auto;
+          flex-shrink: 0;
+        }
+
+
+        div {
+          position: relative;
+          top: -150px;
+          display: none;
+          h3 {
+            color: #FFF;
+            font-family: Anton;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+    
+          p {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: -0.64px;
+          }
+        }
+      }
+
+      .portfolioInfo:hover {
+        .portfolioText {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+
+
+  
+
 }
 
 // MEDIA 400
@@ -458,6 +680,73 @@
       }
     }
   }
+
+    // PROJECT
+    .projectCard {
+      z-index: 100;
+      position: relative;
+      bottom: 50px;
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 2px;
+      background: #111214;
+      padding: 73px 0 79px 0;
+      margin-bottom: 100px;
+      
+      h2 {
+        color: #FFF;
+        font-family: Anton;
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+    
+      a {
+        width: 138px;
+        height: 47px; 
+        display: inline-flex;
+        padding: 16px 24px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        background: #FE390C;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: capitalize;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 24px;
+      }
+    
+      button {
+        background: none;
+        border: none;
+        color: #A9A9AA;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px; 
+        letter-spacing: -0.56px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    
+        &::before {
+          content: '';
+          display: inline-block;
+          background: url(img/Icon.svg); background-repeat: no-repeat; background-size: cover;background-position: center;
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+  
 }
 
 // MEDIA 550
