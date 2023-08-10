@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Service() {
   return (
-    <section className='serviceSection'>
+    <section className='serviceSection' id='loyiha'>
       <div className="container">
         <h2 className='serviceTitle'>02 <span>my service</span></h2>
         <div className='serviceContent row justify-content-center'>

@@ -32,7 +32,7 @@ export default class Portfolio extends Component {
       ]
     };
     return (
-      <section className="portfolioSection">
+      <section className="portfolioSection" id="portfolio">
         <div className="container">
           <div className="portfolioContent">
             <h2>03 <span>portfolio</span></h2>

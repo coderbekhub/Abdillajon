@@ -54,16 +54,16 @@ export default function Header() {
                   <a onClick={navToggle} className='nav-link' href="#mahsulot">about</a>
                 </li>
                 <li>
-                  <a onClick={navToggle} className='nav-link' href="#loyiha">about</a>
+                  <a onClick={navToggle} className='nav-link' href="#loyiha">service</a>
                 </li>
                 <li>
-                  <a onClick={navToggle} className='nav-link' href="#aloqa">portfolio</a>
+                  <a onClick={navToggle} className='nav-link' href="#portfolio">portfolio</a>
                 </li>
                 <li>
                   <a className='NavBtnList' href="#">contact</a>
                 </li>
               </ul>
-              <a className='NavBtn' href="#">contact</a>  
+              <a className='NavBtn' href="tel:+998977770777">contact</a>  
 
               <div onClick={navToggle} className={toggleIcon}>
                 <div className="line1"></div>
