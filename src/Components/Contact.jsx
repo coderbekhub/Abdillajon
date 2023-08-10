@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavInsta from '../img/navInsta.svg'
 import NavFcBook from '../img/NavFsBook.svg'
 import NavLN from '../img/NavLN.svg'
@@ -6,8 +6,11 @@ import NavSite from '../img/NavSite.svg'
 import Call from '../img/Call.svg'
 import MessageContact from '../img/MessageContact.svg'
 import loationContact from '../img/locationContact.svg'
+import toast from 'react-hot-toast';
 
 export default function Contact() {
+  const BOT_TOKEN = "6189574670:AAF6_AfceRuiuG3ZrSo_CSwfYyiY4hrpPb8";
+  const CHAT_ID = "-1001892280247"
   return (
     <section className='contactSection'>
       <div className="container">
