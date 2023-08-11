@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import NavBrand from '../img/NavBrand.svg'
 import NavInsta from '../img/navInsta.svg'
 import NavFcBook from '../img/NavFsBook.svg'
-import NavLN from '../img/NavLN.svg'
 import NavSite from '../img/NavSite.svg'
-
+import NavBrand from '../img/navBrand.png'
 
 export default function Header() {
   const [active, setActive] = useState('nav-list')
@@ -42,28 +40,29 @@ export default function Header() {
             <div className="navBody">
               <a href='/'>
                 <div className='nav-logo'>
-                  <img src={NavBrand} alt="..." />
+                  {/* <img src={NavBrand} alt="..." /> */}
+                  <h1>Mirzohidov</h1>
                 </div>
               </a>
 
               <ul className={active}>
                 <li>
-                  <a onClick={navToggle}  className='nav-link navActive' href="/">Home</a>
+                  <a onClick={navToggle}  className='nav-link navActive' href="/">Bosh sahifa</a>
                 </li>
                 <li>
-                  <a onClick={navToggle} className='nav-link' href="#mahsulot">about</a>
+                  <a onClick={navToggle} className='nav-link' href="#mahsulot">Biz haqimizda</a>
                 </li>
                 <li>
-                  <a onClick={navToggle} className='nav-link' href="#loyiha">service</a>
+                  <a onClick={navToggle} className='nav-link' href="#loyiha">Xizmatlar</a>
                 </li>
                 <li>
-                  <a onClick={navToggle} className='nav-link' href="#portfolio">portfolio</a>
+                  <a onClick={navToggle} className='nav-link' href="#portfolio">portfel</a>
                 </li>
                 <li>
-                  <a className='NavBtnList' href="#">contact</a>
+                  <a className='NavBtnList' href="#">aloqa</a>
                 </li>
               </ul>
-              <a className='NavBtn' href="tel:+998977770777">contact</a>  
+              <a className='NavBtn' href="tel:+998977770777">aloqa</a>  
 
               <div onClick={navToggle} className={toggleIcon}>
                 <div className="line1"></div>
@@ -77,15 +76,15 @@ export default function Header() {
 
         <div className='heroContent d-flex'>
           <div className='heroInfo'>
-            <h2>Hello, I’m</h2>
-            <h3>robert fox</h3>
-            <span>Professional Product Designer</span>
-            <a href="#">let’s talk</a> 
+            <h2>Salom, men</h2>
+            <h3>Mirzohidov Mirsodiq</h3>
+            <span>Tajribali veb dasturchi</span>
+            <a href="#">keling gaplashamiz</a> 
           </div>
 
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/reel/CmvL5erJZvM/?igshid=Yzg5MTU1MDY=">
                 <div>
                   <img src={NavInsta} alt="..." />
                 </div>
@@ -99,7 +98,7 @@ export default function Header() {
             <li>
               <a href="#">
                 <div>
-                  <img src={NavLN} alt="..." />
+                  <i class='bx bxl-telegram'></i>
                 </div>
               </a></li>
             <li>
